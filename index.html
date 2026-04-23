@@ -1,12 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shashank Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shashank Kumar Singh | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h1 { font-size: 48px; margin-bottom: 10px; }
+    h2 { font-size: 28px; margin-bottom: 20px; color: #38bdf8; }
+    p { max-width: 600px; margin: auto; color: #94a3b8; }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 10px;
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    .primary {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    /* Projects */
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      width: 300px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .tags span {
+      background: #334155;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 6px;
+      font-size: 12px;
+      display: inline-block;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #020617;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section>
+  <h1>Hi, I'm Shashank Kumar Singh</h1>
+  <h2>Full Stack Developer | AI Enthusiast</h2>
+
+  <p>
+    I build scalable web applications and data-driven systems using React, Node.js, and Cloud technologies.
+  </p>
+
+  <div>
+    <a href="resume.pdf" download class="btn primary">Download Resume</a>
+    <a href="https://github.com/Shashank150503" target="_blank" class="btn">GitHub</a>
+    <a href="https://www.linkedin.com/in/shashank-kumar-9ab383231/" target="_blank" class="btn">LinkedIn</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
+  <p>
+    Computer Science graduate with experience in full-stack development, machine learning, and cloud computing.
+    Passionate about building impactful applications and solving real-world problems.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <h2>Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>HamarJob Portal</h3>
+      <p>Full-stack job portal with advanced filtering and scalable backend.</p>
+      <div class="tags">
+        <span>React</span><span>Node.js</span><span>MongoDB</span>
+      </div>
+      <a href="https://github.com/Shashank150503/Hamar-Job-Portal" target="_blank" class="btn">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Stock Data Pipeline</h3>
+      <p>Real-time data pipeline using Kafka and AWS services.</p>
+      <div class="tags">
+        <span>Kafka</span><span>AWS</span><span>Python</span>
+      </div>
+      <a href="#" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Shopify AI App</h3>
+      <p>AI-powered application for intelligent automation.</p>
+      <div class="tags">
+        <span>Node.js</span><span>AI</span><span>MongoDB</span>
+      </div>
+      <a href="https://github.com/Shashank150503/Shopify-Ai-APP" target="_blank" class="btn">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>Contact</h2>
+  <p>Email: shashank1505kumar@gmail.com</p>
+  <p>Phone: +91 7009164580</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Shashank Kumar Singh</p>
+</footer>
+
+</body>
 </html>
