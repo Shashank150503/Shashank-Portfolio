@@ -1,5 +1,39 @@
 body {
   margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0b0f19;
+  color: #e2e8f0;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #38bdf8;
+  color: #0b0f19;
+  transform: scale(1.05);
+}
+
+
+body {
+  margin: 0;
   font-family: Arial;
   background: #0f172a;
   color: white;
